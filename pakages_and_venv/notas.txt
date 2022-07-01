@@ -1,0 +1,53 @@
+Comandos
+
+pip -V                      : Mostrar version de pip
+pip list                    : Mostar paquetes instalados en entorno virtual actual
+pip install package_name    : Proceso de instalacion normal
+pip uninstall package_name  : Proceso de desinstalacion normal, no desinstala paquetes adicionales
+pip install -U package_name : Proceso de actualizacion de paquetes
+pip show package_name       : Muestra detalles del paquete y su ubicacion de instalacion y dependencias
+python -m pip help          : Muestra ayuda sobre pip
+python -m pip help list     : Muestra ayuda sobre especificamente el comando list
+
+THe cheese shop https://pypi.org 
+
+
+Virtual Envirnments
++ Isoleted context for installing packages
+
+Create a Virtual Envirnments
+1.- Project root
+2.- python -m venv name_venv
+    ex: python -m venv .venv
+
+Activate
+1.- cd venv/Scripts         : change directory to Scripts insaide vnev 
+2.- activate                : execute command activate
+
+
+Required packages
+Create a required file
+1.- Activate virtual Envirnment
+2.- run: python -m pip freeze
+3.- Add the list of packa to a file 
+    python -m pip freeze > requirements.txt
+4.- If you want to add all the requirements packages from the Project
+    using a requirements.txt you have to run:
+    python -m pip install -r requirements.txt
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

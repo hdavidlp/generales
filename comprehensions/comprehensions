@@ -1,0 +1,22 @@
+from pprint import pprint
+pprint([p for p in [1,2,3,4] if p%2==0] )
+
+
+l = [ i * 2 for i in range (10)]
+print (l)
+
+m = [(x,y) for x in range(5) for y in range(5)]
+print (m)
+
+w = [ x for x in range (100) if x%3==0]
+print (w)
+
+
+values = [x / ( x - y)
+        for x in range (100)
+        if x > 50
+        for y in range (100)
+        if x - y != 0]
+
+print (values)
+
